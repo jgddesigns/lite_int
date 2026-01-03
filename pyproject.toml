@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel", "random", "unicodedata"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lite-pack"
+version = "0.1.0"
+description = "Lightweight utility package"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Jason G. Dunn" }]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/yourname/lite-pack"
