@@ -33,6 +33,11 @@ class LiteInt:
         self.test_size = 4000
 
 
+        data = self.encode(465667758994466563992944949590505048389490405944894905059405)
+        print()
+        print()
+        print(data)
+
 
     # Creates the master list of symbols used to map the data to. Up to six numbers can be turned into 1, using a slice from the original string as a symbol's position in the 141,705 length array . 
     #
@@ -165,3 +170,6 @@ class LiteInt:
             self.print_on = False
 
             return data_match
+        
+
+LiteInt()
