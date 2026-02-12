@@ -32,12 +32,6 @@ class LiteInt:
 
         self.test_size = 4000
 
-        
-
-
-
-        self.quick_test()
-
 
 
     # Creates the master list of symbols used to map the data to. Up to six numbers can be turned into 1, using a slice from the original string as a symbol's position in the 141,705 length array . 
@@ -81,7 +75,7 @@ class LiteInt:
     # @param, data (integer): An integer number of any length. If not passed, a test integer will be created.
     # @return, self.encoding_string: The full string of the processed encoding. 
     def encode(self, data=None):
-        data = data if data else self.get_data()
+        data = str(data) if data else self.get_data()
         while data[0] == "0":
             self.decoded_string = self.decoded_string + "0"
             data = data[1:]
@@ -171,6 +165,3 @@ class LiteInt:
             self.print_on = False
 
             return data_match
-
-
-LiteInt()
